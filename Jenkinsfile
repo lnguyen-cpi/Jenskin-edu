@@ -6,7 +6,9 @@ pipeline {
     stages {
       
         stage("Build") {
-          echo "This is Branch ${BRANCH_NAME}"
+          steps {
+                echo "This is Branch ${BRANCH_NAME}"
+            }
         }
     }
 }
